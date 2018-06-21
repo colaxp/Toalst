@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Toalst" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHr-lA-Ekr">
+                                <rect key="frame" x="20" y="70" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ner-QQ-jb2"/>
+                                </constraints>
+                                <state key="normal" title="顶部展示"/>
+                                <connections>
+                                    <action selector="clickTop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v6C-Ty-0mH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffx-UK-07L">
+                                <rect key="frame" x="20" y="313.5" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="D9Y-LZ-q2a"/>
+                                </constraints>
+                                <state key="normal" title="居中展示"/>
+                                <connections>
+                                    <action selector="clickCenter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ecj-8q-ezn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cW-xe-JDo">
+                                <rect key="frame" x="20" y="587" width="335" height="30"/>
+                                <state key="normal" title="底部展示"/>
+                                <connections>
+                                    <action selector="clickBottom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bYq-6u-GVP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ffx-UK-07L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="0D5-NC-3EU"/>
+                            <constraint firstItem="9cW-xe-JDo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="1AF-de-4Kt"/>
+                            <constraint firstItem="sHr-lA-Ekr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="BfR-5C-Giz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9cW-xe-JDo" secondAttribute="bottom" constant="50" id="Evc-56-Swi"/>
+                            <constraint firstItem="ffx-UK-07L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xex-4k-FQc"/>
+                            <constraint firstAttribute="trailing" secondItem="ffx-UK-07L" secondAttribute="trailing" constant="20" id="YGf-FK-Ect"/>
+                            <constraint firstAttribute="trailing" secondItem="sHr-lA-Ekr" secondAttribute="trailing" constant="20" id="k6S-0k-JAu"/>
+                            <constraint firstItem="sHr-lA-Ekr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="lMy-ou-ltp"/>
+                            <constraint firstItem="ffx-UK-07L" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="t84-tE-J8Y"/>
+                            <constraint firstAttribute="trailing" secondItem="9cW-xe-JDo" secondAttribute="trailing" constant="20" id="yNV-dt-iCd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
